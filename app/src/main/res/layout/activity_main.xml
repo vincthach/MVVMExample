@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
+    <data>
+        <variable
+            name="result"
+            type="com.example.thachnguyenit.mvvmexample.models.MatchResult"/>
+    </data>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
@@ -12,14 +17,14 @@
         <TextView
             android:id="@+id/home_team_name"
             android:textSize="13pt"
-            android:text="@string/app_name"
+            android:text="@{result.homeTeam.name}"
             android:textColor="@color/colorPrimary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/home_team_goals"
             android:layout_width="match_parent"
-            android:text="@string/app_name"
+            android:text="@{Integer.toString(result.homeTeam.goals)}"
             android:textColor="@color/colorPrimary"
             android:layout_height="wrap_content"
             android:textSize="13pt"/>
@@ -28,14 +33,14 @@
         <TextView
             android:id="@+id/away_team_name"
             android:textSize="13pt"
-            android:text="@string/app_name"
+            android:text="@{result.awayTeam.name}"
             android:textColor="@color/colorPrimary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/away_team_goals"
             android:layout_width="match_parent"
-            android:text="@string/app_name"
+            android:text="@{Integer.toString(result.awayTeam.goals)}"
             android:textColor="@color/colorPrimary"
             android:layout_height="wrap_content"
             android:textSize="13pt"/>

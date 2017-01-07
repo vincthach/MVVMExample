@@ -32,16 +32,7 @@ public class MainActivity extends AppCompatActivity {
         if (matchResult.getFeatureImage() != null) {
             Glide.with(this).load(matchResult.getFeatureImage()).into(binding.featureImage);
         }
-        if (matchResult.getHomeTeam() != null) {
-            Team team = matchResult.getHomeTeam();
-            binding.homeTeamName.setText(team.getName());
-            binding.homeTeamGoals.setText(Integer.toString(team.getGoals()));
-        }
-        if (matchResult.getAwayTeam() != null) {
-            Team team = matchResult.getAwayTeam();
-            binding.awayTeamName.setText(team.getName());
-            binding.homeTeamGoals.setText(Integer.toString(team.getGoals()));
-        }
+        binding.setResult(matchResult);
     }
 
 
