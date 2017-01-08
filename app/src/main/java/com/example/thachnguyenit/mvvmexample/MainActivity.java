@@ -29,12 +29,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void fillData(MatchResult matchResult) {
-        if (matchResult.getFeatureImage() != null) {
-            Glide.with(this).load(matchResult.getFeatureImage()).into(binding.featureImage);
-        }
         binding.setResult(matchResult);
     }
-
-
-
 }
