@@ -33,6 +33,7 @@
 
     <style name="feature_layout">
         <item name="android:layout_width">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
         <item name="android:layout_height">150dp</item>
     </style>
 

@@ -6,13 +6,14 @@
             name="result"
             type="com.example.thachnguyenit.mvvmexample.models.MatchResult"/>
     </data>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    style="@style/root_layout">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_main"
+        style="@style/root_layout">
     <ImageView
         android:id="@+id/feature_image"
         app:image_url="@{result.featureImage}"
+        app:place_holder="@{@drawable/laucher}"
         style="@style/feature_layout" />
     <LinearLayout style="@style/team_layout">
         <TextView

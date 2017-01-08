@@ -11,7 +11,7 @@ public class DummyData {
     public static MatchResult createDummyData() {
         Team teamA = new Team("Team A", 10);
         Team teamB = new Team("Team B", 9);
-        String featureImage = "http://kenh14cdn.com/2016/tung-son-la-ai-2-1477556820136.jpg";
+        String featureImage = "http://hoala.vn/upload/img/images/tulip_7.jpg";
         MatchResult matchResult = new MatchResult(teamA, teamB, featureImage);
         return matchResult;
     }
